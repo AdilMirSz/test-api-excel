@@ -1,9 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32901.215
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiExcel", "ApiExcel\ApiExcel.csproj", "{B8C933A4-70AA-4FD0-867B-DE4CBD768423}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiExcel", "ApiExcel\ApiExcel.csproj", "{DCB88BD3-B137-48F8-8A80-B1AEB7E9BD44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +8,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8C933A4-70AA-4FD0-867B-DE4CBD768423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8C933A4-70AA-4FD0-867B-DE4CBD768423}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8C933A4-70AA-4FD0-867B-DE4CBD768423}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8C933A4-70AA-4FD0-867B-DE4CBD768423}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {F1FDECD9-D325-4500-AFA6-6B60195EB2B2}
+		{DCB88BD3-B137-48F8-8A80-B1AEB7E9BD44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB88BD3-B137-48F8-8A80-B1AEB7E9BD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB88BD3-B137-48F8-8A80-B1AEB7E9BD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB88BD3-B137-48F8-8A80-B1AEB7E9BD44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
