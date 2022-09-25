@@ -1,4 +1,7 @@
 using System.Reflection;
+using ApiExcel;
+using ApiExcel.DAL;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddDbContext<ApiExcelDataContext>(o => o.UseNpgsql(builder.Configuration.GetConnectionString("ApiExcelDb")));
+builder.Services.AddScoped<Importer>();
+
 builder.Services.AddSwaggerGen();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -28,6 +34,8 @@ builder.Services.AddSwaggerGen(options =>
             Url = new Uri("https://example.com/license")
         }
     });
+
+    options.OperationFilter<SwaggerFileOperationFilter>();
 
     // using System.Reflection;
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
