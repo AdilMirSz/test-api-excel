@@ -31,8 +31,8 @@ public class DepartmentController : ControllerBase
         await using (var stream = new MemoryStream())
         { 
             await upload.CopyToAsync(stream);
-            WorkBook workbook = WorkBook.Load(stream);
-            await _importer.ImportFromXlsAsync(workbook, _context);
+         
+            await _importer.ImportFromXlsAsync(stream, _context);
         }
     }
 }
